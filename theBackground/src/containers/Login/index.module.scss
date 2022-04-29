@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+.loginBody {
+    background-color: red;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://tse1-mm.cn.bing.net/th/id/R-C.f3e488ee1e29a542bc04d55bdc4af80e?rik=Mu9zDYcf0vPIjQ&riu=http%3a%2f%2fimage.hnol.net%2fc%2f2017-12%2f28%2f17%2f201712281742419611-239867.jpg&ehk=4xqzxiEozjK9xnPHnZHTZECDc5Eg1hr9MyAUFR1C96M%3d&risl=&pid=ImgRaw&r=0);
+    background-size: cover;
+
+    .title {
+        font-size: 10rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bolder;
+    }
+
+    .loginFrom {
+        position: relative;
+        left: 60%;
+        width: 30vw;
+        height: 60vh;
+        background-color: rgba(255, 255, 255, 0.5);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        >div {
+            font-size: 3.5rem;
+            flex: display;
+            align-items: center;
+
+            >label>input {
+                height: 3.5rem;
+                outline: none;
+            }
+        }
+
+        >div:nth-child(1) {
+            margin-top: 6rem;
+        }
+
+        >div:nth-child(2) {
+            margin: 2rem 0rem 0rem 2rem;
+        }
+
+        >div:nth-child(3) {
+            font-size: 2rem;
+            margin-top: 2rem;
+            width: 12rem;
+            height: 6rem;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            user-select: none;
+        }
+    }
+}

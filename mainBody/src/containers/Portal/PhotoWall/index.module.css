@@ -1,0 +1,8 @@
+.photoBox {
+  width: 1000px;
+  overflow: hidden;
+}
+
+.photo, .photo img {
+  width: 100%;
+}

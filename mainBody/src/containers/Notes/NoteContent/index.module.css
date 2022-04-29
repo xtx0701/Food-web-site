@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.notesContent {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.notesContent .content_left {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+
+.notesContent .content_left .contentPart > div:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+}
+
+.notesContent .content_left .contentPart > div:nth-child(1) > div:nth-child(1) {
+  padding: 0.5rem;
+}
+
+.notesContent .content_left .contentPart > div:nth-child(1) > div:nth-child(1) > img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.notesContent .content_left .contentPart > div:nth-child(1) > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+}
+
+.notesContent .content_left .contentPart > div:nth-child(1) > div:nth-child(2) > div {
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.notesContent .content_left .contentPart > div:nth-child(2) {
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+}
+
+.notesContent .content_left .contentPart > div:nth-child(3) img {
+  margin-left: 1rem;
+  width: 30%;
+  height: auto;
+}
+
+.notesContent .content_left .contentPart > div:nth-child(4) {
+  height: 2rem;
+  vertical-align: middle;
+}
+
+.notesContent .content_left .contentPart:nth-child(n+2) {
+  margin-top: 3rem;
+}
+
+.notesContent .contentRight {
+  width: 35%;
+}
+
+.notesContent .contentRight .title {
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+.notesContent .contentRight .guessLike {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.notesContent .contentRight .guessLike > div {
+  width: 48%;
+  margin: 2rem 0rem 0rem 0.5rem;
+}
+
+.notesContent .contentRight .guessLike > div > div:nth-child(1) img {
+  width: 100%;
+  height: 15rem;
+}
+
+.notesContent .contentRight .guessLike > div > div:nth-child(2) {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.notesContent .contentRight .guessLike > div > div:nth-child(3) {
+  color: #99b0cd;
+}

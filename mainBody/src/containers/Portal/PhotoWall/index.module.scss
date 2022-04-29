@@ -1,0 +1,12 @@
+.photoBox {
+    width: 1000px;
+    overflow: hidden;
+}
+
+.photo {
+    width: 100%;
+
+    img {
+        @extend .photo
+    }
+}

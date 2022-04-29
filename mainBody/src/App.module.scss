@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+$percentMax:100%;
+
+// 首页导航栏
+.navigation {
+    width: 146rem;
+    height: 3.5rem;
+    background-color: #333333;
+    display: flex;
+    justify-content: space-between;
+
+    .navigation_left {
+        width: 40%;
+
+        ul {
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            height: 3.5rem;
+
+            li {
+                width: 20%;
+                list-style: none;
+            }
+
+            // 路由选择样式
+            .link {
+                text-decoration: none;
+                width: $percentMax;
+                height: $percentMax;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+
+                &:hover {
+                    background-color: black
+                }
+            }
+
+            .link_check {
+                @extend .link;
+                color: red;
+            }
+        }
+    }
+
+    .navigation_right {
+        font-weight: bolder;
+        width: 15%;
+        height: $percentMax;
+        position: relative;
+
+        // 用户登陆按钮样式
+        .userLogin {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0.7rem;
+            background-color: #ffa859;
+            height: 85%;
+            width: 30%;
+            position: absolute;
+            top: 50%;
+            left: 25%;
+            transform: translateY(-50%);
+        }
+
+        .userMessage {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 12rem;
+            height: 100%;
+            color: white;
+
+            >img {
+                width: 3rem;
+                height: 3rem;
+                border-radius: 50%;
+                margin-right: 0.5rem
+            }
+        }
+
+        .userRelease {
+            @extend .userLogin;
+            left: 65%;
+            background-color: #59c3d1;
+        }
+    }
+}
+
+.mainBody {
+    .Header {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 10rem;
+        width: 100rem;
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30%;
+            height: $percentMax;
+            font-size: 5rem;
+            font-weight: bolder;
+        }
+
+        .search {
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            input {
+                background-color: white;
+                border: 0.3rem solid #999999;
+                height: 4rem;
+                line-height: $percentMax;
+                width: 20rem;
+                font-size: 1.5rem;
+                margin-top: 0rem;
+                outline: none;
+            }
+
+            div {
+                @extend .search;
+                width: 7rem;
+                height: 4rem;
+                background-color: #999999;
+                position: relative;
+                right: 0.5rem;
+
+                &:hover {
+                    background-color: #ff7875;
+                    color: white;
+                }
+            }
+        }
+    }
+
+
+}
+
+.out {
+    background-color: red;
+    position: absolute;
+    border-radius: 10px;
+    width: 4rem;
+    height: 2rem;
+    left: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
